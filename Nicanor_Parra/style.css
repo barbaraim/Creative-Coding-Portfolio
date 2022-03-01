@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+/* add */ p { font-family: 'Shizuru', cursive; }
+p{font-family: 'Anton', sans-serif;}
+p {font-family: 'Cinzel', serif;}
+canvas {
+  display: block;
+}
