@@ -1,101 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbara_im</title>
   </head>
-  <style>
-    body {
-      height: 10vh;
-      margin: 0;
-      background-color: #37474F;
-      color: white;
-      /*display: flex;
-      justify-content: center;
-      align-items: center;*/
-      font-family: sans-serif;
-    }
-    h1 {
-      margin: 0;
-    }
-    a {
-      color: white;
-    }
-    h3{
-      margin-left: 10vh;
-    }
-    p{
-      margin-left: 12vh;
-    }
-  </style>
   <body>
-    <h1>Bárbara Irarrázaval's Creative Coding Portfolio</h1>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <h1 class="navbar-brand d-flex align-items-center">Bárbara Irarrázaval's Creative Coding Portfolio</h1>
+    </div>
 
-    <h3>Week 1</h3>
-    <p>
-      <a href="./CreativityAssignment">Creativity Assignment</a>
-    </p>
-    <p>
-      <a href="./Elqui">Elqui</a>
-    </p>
-
-    <h3>Week 2</h3>
-    <p>
-      <a href="./Telar">Telar</a>
-    </p>
     
 
+    <section class="py-4 text-start container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 ">
+          <p class="lead text-muted">Portfolio for UCSC CMPM169 - Winter Quarter 2022.</p>
+          
+        </div>
+      </div>
+    </section>
 
-    <h3>Week 3</h3>
-    <p>
-      <a href="./Dreams">Dreams</a>
-    </p>
-    
+    <section class="py-5 text-start container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 1</h1>
+          <p class="lead text-muted">The first week was about creating static images.</p>
+          
+                    
+          <p>
+            <a href="./CreativityAssignment" class="btn btn-secondary my-2">First Creativity Assignment</a>
+          </p>
+          <p>The Elqui Valley is a place in Chile, famous for their flowered desert, astronomy and wine. I was inspired by their cacti and flowers, and also sea urchins, in doing the assignment. 
+          </p><p>
+            I found a star shape example in the reference of p5 and wanted to try it. In drawing with it I remembered Elqui Valley, with all the sea stars, sea urchin, cacti and astronomy. Then I decided that the person trying the drawing should be the one adjusting the settings, so that more precise and personal work could be formed. With the help of keyIsPressed and keyIsDown I could achieve a more dynamic approach.
+          </p><p>
+            My assignment is a canvas based on star shapes. By clicking the mouse, you can draw. The following actions can be made:
+          </p>
+          <ul>
+            <li>
+              LEFT ARROW: decrease amount of vertices of the star (their points)
+            </li>
+
+            <li>
+              RIGHT ARROW: increase the amount of vertices of the star
+            </li>
+            <li>
+            A: decrease the first radius
+          </li><li>
+            S: increase the first radius
+          </li><li>
+            Q: decrease the first radius
+          </li><li>
+            W: increase the first radius
+          </ul>
+          <p>
+            Also, you can play in the canvas with 6 different colors! Just press one of the following numbers: 1, 2, 3, 4, 5, 0.
+          </p>
+
+          <p>
+            <a href="./Elqui" class="btn btn-secondary my-2">Elqui</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 text-end container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 2</h1>
+          <p class="lead text-muted">This assignment was about live video processing.</p>
+          <p>My work is called Telar and it is inspired in working with cloth and beads. The first option, Cloth, the user has to click the mouse and some strands will be "woven" to the canvas, based on random copies of the web camera. Also, by pressing "1" you will get a Black and White effect, and by pressing "2" a inverse effect (warning: strobing lights). 
+
+          Then, the beads is another interactive web camera filter, accesible by pressing "b". It has different circles, with diameters that change based on the luminosity of the scene. You can also play with the size, with the up and down arrows.
+          
+          To go back to Cloth mode, "c" must be typed.</p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./Telar">Telar</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 text-start container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 3</h1>
+          <p class="lead text-muted">This assignment was about patterns and transformations.</p>
+          <p>For my pattern, I wanted to simulate a kaleidoscope. So, by using transformations and rotations from class, I was able to create shapes and movement simulating the kaleidoscope. The kaleidoscope is composed of a big pinwheel, and 10 small pinwheels in its border. As an idea, I wanted to make an recursive code for adding more pinwheels, but just trying with one more round, the code instantly was really slow.
+
+            Instead, I experimented with shear. By clicking the mouse, the shear is activated and the whole kaleidoscope just changes. That is why it is called Dreams, as a really small event can distort the whole thing. The shear depends in the mouseY, while the size of things depend on mouseX.
+          </p><p>
+            In summary:
+            
+            By clicking, the shear is activated and depends on the mouse's height. </p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./Dreams">Dreams</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 text-end container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 4</h1>
+          <p class="lead text-muted">This assignment was about sounds.</p>
+          <p>Piano pedals is a sound p5 sketch based on oscillations. When I was little, my grandmother had a piano in her house that she had inherited. I liked playing with the keys and pedals, and by creating this piece, these flashbacks occurred.
+
+            It works by using sounding oscillations, with varying frequencies. Also, the type of oscillation can be changed and the canvas can be reset. This reset is gradual but fast, giving more the sense of the piano pedals. To give it more of a piano feel, a new oscillation can be add by pressing a letter key with a frequency directly mapped from the keyCode.
+            
+            The sketch:
+            
+            https://editor.p5js.org/barbara_im/sketches/9DKzw2fSo (Links to an external site.)
+            
+            Some commands:
+            
+            Click on screen: do a new oscillation with a frequency related to mouseX.
+            
+            Press "a": reset the canvas.
+            
+            Press "1": square type of oscillation.
+            
+            Press "2": sine type of oscillation.
+            
+            Press "3": sawtooth type of oscillation.
+            
+            Press "4": triangle type of oscillation.
+            
+            Press "6": constant frequency.
+            
+            Press "7": frequency is increasing every second.
+            
+            Press "8": frequency is decreasing every second.
+            
+            Press any other letter key: add a new oscillation with a frequency mapped from the keyCode. </p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./Piano_Pedals">Piano Pedals</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
 
-    <h3>Week 4</h3>
-    <p>
-      <a href="./Piano_Pedals">Piano Pedals</a>
-    </p>
-    
+    <section class="py-5 text-start container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 5</h1>
+          <p class="lead text-muted">This assignment was about a collaboration with sounds, by remixing someonelse's work.</p>
+          <p>Based on the sketch by Gurkirat Saini, I felt inspired to do a whole animal party, as this rat looked like a party animal. So I included some animal with different patterns as seen on class. Also I wanted more of a feeling of a DJ and a party, so I added some special sounds accesible with some keys, to give it a more 2000's party spirit. </p>
+          <p>Original Sketch: https://editor.p5js.org/gssaini117/sketches/rzAbNaPNd
+
+            Remix: https://editor.p5js.org/barbara_im/sketches/ksxVTbrHB</p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./rats_remix_farm_party!">Rats Remix: Farm Party!</a>
+          </p>
+        </div>
+      </div>
+    </section>
+      
+    <section class="py-5 text-end container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 6</h1>
+          <p class="lead text-muted">This assignment was about 3D & WebGL in p5.js.</p>
+          <p>Inspired in the patterns week, I decided to do a 3D thing that is always turning and doing crazy things. All the elements reminded me of christmas, as they look like pines, snow and ornaments. By playing, with textures, video camera, lights and models, I was able to achieve this.
+
+            Mouse interaction: if you hold down click, the background isn't repainted, so you can form cool images.</p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./Crazy_Christmas">Crazy Christmas</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
 
-    <h3>Week 5</h3>
-    <p>
-      <a href="./rats_remix_farm_party!">Rats Remix: Farm Party!</a>
-    </p>
-    
+    <section class="py-5 text-start container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 7</h1>
+          <p class="lead text-muted">This assignment was about expressing poetry in Processing.</p>
+          <p>Nicanor Parra is a famous poet (and more famously as an antipoet) from Chile. In this piece, different poems and antipoems are presented in the original form, as well as some playful elements with mousePressed, inspired by his work.</p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./Nicanor_Parra">Nicanor Parra</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="py-5 text-end container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Week 8</h1>
+          <p class="lead text-muted">This assignment was about expressing poetry in Processing.</p>
+          <p>Strange Things is an experiment with facemesh and the points of the face it provides. By clicking any key, it is possible to change the type of representation. There are three main ones:
+          </p>
+          <ol>
+            <li>Flock of birds: looks like a lot of birds in the face of the person.</li>
+            <li>The Mask: with the mouse, the person can control where the mask goes.</li>
+            <li>Lines: just a representation to see the order in which the algorithm provides the points.</li>
+          </ol>
+          <p>
+            Mostly these come from playing with the facemesh example from ml5. Nº 3 is really interesting because I wanted to find out how the points where provided and if there was any criteria to how they are shown. But I found out, there is a certain order but not the one one would think.
+            
+            The other two modes come from experimentation with the points.</p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./Nicanor_Parra">Nicanor Parra</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Week 6</h3>
-    <p>
-      <a href="./Crazy_Christmas">Crazy Christmas</a>
-    </p>
-    
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <h1 class="fw-light">Final Project: Weeks 9 and 10</h1>
+          <p class="lead text-muted">The final exam of the course.</p>
+          <p>8M conmemorates the day March 8th, International Women's Day. This is a very important date in Chile, 
+            where many women come out and protest for their rights. Just as a way to show the violence that women suffer
+            8M shows the amount of attempted femicides and consumated femicides in Chile during 2021 alone. Finally, some of 
+            the names of the victims are shown, as a way to commemorate them.</p>
+          <p>
+            <a class="btn btn-secondary my-2"href="./8M">8M</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-
-    <h3>Week 7</h3>
-    <p>
-      <a href="./Nicanor_Parra">Nicanor Parra</a>
-    </p>
-    
-
-
-    <h3>Week 8</h3>
-    <p>
-      <a href="./Strange_Things_Facemesh_Webcam/">Strange Things Facemesh Experiment</a>
-    </p>
-
-    <h3>Week 9-10: EXAM</h3>
-    <p>
-      <a href="./8M/">8M</a>
-    </p>
-    <p>
-      8M conmemorates the day March 8th, International Women's Day. This is a very important date in Chile, 
-      where many women come out and protest for their rights. Just as a way to show the violence that women suffer
-      8M shows the amount of attempted femicides and consumated femicides in Chile during 2021 alone. Finally, some of 
-      the names of the victims are shown, as a way to commemorate them.
-    </p>
   </body>
 </html>
