@@ -41,7 +41,7 @@ function setup() {
 }
 
 function piramids(bottom, top){
-  for(let i=0; i<windowHeight+100; i+=30){
+  for(let i=0; i<windowHeight+1000; i+=30){
     fill(255, 255, 0, 200)
     triangle(i, bottom*windowHeight/10, i, top*windowHeight/10, 81+i, bottom*windowHeight/10);
 
@@ -51,17 +51,7 @@ function piramids(bottom, top){
 }
 
 function inversePiramids(bottom, top){
-  for(let i=0; i<windowHeight+100; i+=30){
-    fill(255, 0, 255, 200)
-    triangle(i, bottom*windowHeight/10, i, top*windowHeight/10, 81+i, bottom*windowHeight/10);
-
-    fill(255, 255, 0, 200)
-    triangle(i, bottom*windowHeight/10, i+30, top*windowHeight/10, 81+i, bottom*windowHeight/10);
-  }
-}
-
-function inversePiramids(bottom, top){
-  for(let i=0; i<windowHeight+100; i+=30){
+  for(let i=0; i<windowHeight+1000; i+=30){
     fill(255, 0, 255, 200)
     triangle(i, bottom*windowHeight/10, i, top*windowHeight/10, 81+i, bottom*windowHeight/10);
 
